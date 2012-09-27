@@ -42,7 +42,7 @@
 	<version>2.12</version>
 	<configuration>
 	  <excludes>
-	    <exclude>**/client/*.java</exclude>
+	    <exclude>**/Browser/*.java</exclude>
 	  </excludes>
 	</configuration>
 	<executions>
@@ -58,7 +58,7 @@
 		<exclude>none</exclude>
 	      </excludes>
 	      <includes>
-		<include>**/client/*.java</include>
+		<include>**/Browser/*.java</include>
 	      </includes>
 	    </configuration>
 	  </execution>

@@ -10,7 +10,7 @@
     <resource filtered="false">src/main/webapp/images/logo.jpg</resource>
   </resources>
   <testSources>
-    <source encoding="UTF-8">src/test/java/server/AppTest.java</source>
-    <source encoding="UTF-8">src/test/java/client/AppTest.java</source>
+    <source encoding="UTF-8">src/test/java/Logic/AppTest.java</source>
+    <source encoding="UTF-8">src/test/java/Browser/AppTest.java</source>
   </testSources>
 </archetype>
