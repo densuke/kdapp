@@ -4,7 +4,7 @@
   <groupId>jp.ac.kobedenshi</groupId>
   <artifactId>kdapp</artifactId>
   <version>0.7</version>
-  <name>神戸電子専門学校 授業用webapp</name>
+  <name>神戸電子専門学校 2年生授業向けアーキタイプ</name>
   <url>http://www.kobedenshi.ac.jp/</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
