@@ -27,98 +27,30 @@
       <version>4.10</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.seleniumhq.webdriver</groupId>
-      <artifactId>webdriver-htmlunit</artifactId>
-      <version>0.9.7376</version>
-      <scope>test</scope>
-    </dependency>
+	<dependency>
+		<groupId>org.mockito</groupId>
+		<artifactId>mockito-all</artifactId>
+		<version>1.9.0</version>
+		<scope>test</scope>
+	</dependency>
   </dependencies>
   <build>
     <plugins>
       <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-surefire-plugin</artifactId>
-	<version>2.12</version>
-	<configuration>
-	  <excludes>
-	    <exclude>**/Browser/*.java</exclude>
-	  </excludes>
-	</configuration>
-	<executions>
-	  <execution>
-	    <id>integration-tests</id>
-	    <phase>integration-test</phase>
-	    <goals>
-	      <goal>test</goal>
-	    </goals>
-	    <configuration>
-	      <skip>false</skip>
-	      <excludes>
-		<exclude>none</exclude>
-	      </excludes>
-	      <includes>
-		<include>**/Browser/*.java</include>
-	      </includes>
-	    </configuration>
-	  </execution>
-	</executions>
-      </plugin>
-      <plugin>
-	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-compiler-plugin</artifactId>
 	<version>2.4</version>
 	<configuration>
-	  <source>1.5</source>
-	  <target>1.5</target>
+	  <source>1.6</source>
+	  <target>1.6</target>
 	</configuration>
-      </plugin>
-      <plugin>
-	<groupId>org.apache.tomcat.maven</groupId>
-	<artifactId>tomcat7-maven-plugin</artifactId>
-	<version>2.0-beta-1</version>
-	<configuration>
-  		<charset>UTF-8</charset>
-  		<server>taiken</server>
-  		<update>true</update>
-  		<url>http://serverXX:8080/manager/text</url> <!-- serverXXを指示に合わせて書き換えましょう -->
-	  <port>9999</port>
-	</configuration>
-	<executions>
-	  <execution>
-	    <id>tomcat-run</id>
-	    <goals>
-	      <goal>run</goal>
-	    </goals>
-	    <phase>pre-integration-test</phase>
-	    <configuration>
-	      <fork>true</fork>
-	    </configuration>
-	  </execution>
-	  <execution>
-	    <id>tomcat-shutdown</id>
-	    <goals>
-	      <goal>shutdown</goal>
-	    </goals>
-	    <phase>post-integration-test</phase>
-	  </execution>
-	  <execution>
-	    <id>skip-tomcat</id>
-	    <phase>test</phase>
-	    <configuration>
-	      <skip>true</skip>
-	    </configuration>
-	  </execution>
-	</executions>
       </plugin>
       <plugin>
       	<groupId>org.apache.maven.plugins</groupId>
       	<artifactId>maven-shade-plugin</artifactId>
       	<version>1.7.1</version>
       	<configuration>
-      		
       	</configuration>
-      	
       	<executions>
       		<execution>
       			<id>shade</id>

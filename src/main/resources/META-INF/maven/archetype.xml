@@ -1,16 +1,9 @@
 <archetype>
-  <id>mywebapp</id>
+  <id>kdapp</id>
   <sources>
     <source encoding="UTF-8">src/main/java/App.java</source>
   </sources>
-  <resources>
-    <resource>src/main/webapp/WEB-INF/web.xml</resource>
-    <resource>src/main/webapp/WEB-INF/context.xml</resource>
-    <resource encoding="UTF-8">src/main/webapp/index.jsp</resource>
-    <resource filtered="false">src/main/webapp/images/logo.jpg</resource>
-  </resources>
   <testSources>
-    <source encoding="UTF-8">src/test/java/Logic/AppTest.java</source>
-    <source encoding="UTF-8">src/test/java/Browser/AppTest.java</source>
+    <source encoding="UTF-8">src/test/java/AppTest.java</source>
   </testSources>
 </archetype>
