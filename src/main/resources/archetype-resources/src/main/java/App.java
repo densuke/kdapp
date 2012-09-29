@@ -8,9 +8,6 @@ import java.util.Properties;
  */
 public class App 
 {
-	public static String getMessage(String name) {
-        return "こんにちは" + name;
-	}
 
 	public static void main(String[] args) {
 		/* プロパティファイルの読み込み */
@@ -25,7 +22,7 @@ public class App
 		String first = prop.getProperty("firstname");
 		String last = prop.getProperty("lastname");
 
-		System.out.println(getMessage(first + " " + last));	
+		System.out.println("こんにちは " + first + " " + last);	
 	}
 
 }
