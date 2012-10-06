@@ -8,25 +8,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  <profiles>
-  	<profile>
-		<id>windows</id>
-		<activation>
-			<os>
-				<family>windows</family>
-			</os>
-		</activation>
-		<dependencies>
-			<dependency>
-				<groupId>com.sun</groupId>
-				<artifactId>tools</artifactId>
-				<version>1.5.9</version>
-				<scope>system</scope>
-				<systemPath>${java.home}/../lib/tools.jar</systemPath>
-			</dependency>
-		</dependencies>
-	</profile>
-  </profiles>
   <dependencies>
     <dependency>
       <groupId>org.apache.derby</groupId>
