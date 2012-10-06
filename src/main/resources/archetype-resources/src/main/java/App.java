@@ -69,8 +69,6 @@ public class App
 
 		System.out.println("こんにちは " + first + " " + last);	
 		
-		HelloVE h = new HelloVE();
-		h.setVisible(true);
 		try {
 			DriverManager.getConnection("jdbc:derby:;shutdown=true");
 		} catch(Exception e) {
