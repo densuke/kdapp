@@ -9,7 +9,7 @@
   <resources>
     <resource encoding="UTF-8">src/main/resources/descriptor-bin.xml</resource>
     <resource encoding="UTF-8">src/main/resources/MySQL.properties</resource>
-    <resource encoding="UTF-8">src/main/resources/Sample.properties</resource>
+    <resource encoding="UTF-8">src/main/resources/ja_JP.properties</resource>
   </resources>
 </archetype>
 
