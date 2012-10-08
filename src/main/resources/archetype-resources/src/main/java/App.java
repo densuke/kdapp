@@ -20,7 +20,7 @@ public class App
 		/* プロパティファイルの読み込み */
 		final Properties prop = new Properties();
 		try {
-			prop.load(App.class.getClassLoader().getResourceAsStream("Sample.properties"));
+			prop.load(App.class.getClassLoader().getResourceAsStream("ja_JP.properties"));
 		} catch(Exception e) {
 			System.err.println("プロパティファイルの読み込みに失敗しました");
 			e.printStackTrace();
