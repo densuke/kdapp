@@ -88,7 +88,7 @@
           <extraJvmArguments>-Xmx512m</extraJvmArguments> <!-- 実行時JavaVMへの引数、不要なら行ごと削除OK -->
           <programs>
             <program>
-              <mainClass>kd.App</mainClass> <!-- main()を含むクラスを指定 -->
+              <mainClass>${package}.App</mainClass> <!-- main()を含むクラスを指定 -->
               <name>App<!-- 実行する際の名前に書き換え --></name>
             </program>
           </programs>
