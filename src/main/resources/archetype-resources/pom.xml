@@ -92,6 +92,7 @@
             <program>
               <mainClass>${package}.derby.App</mainClass>  <!-- main()を含むクラスを指定 -->
               <name>DemoDerby</name>                       <!-- 実行する際の名前に書き換え -->
+            </program>
             <program>
               <mainClass>${package}.mysql.App</mainClass>
               <name>DemoMySQL</name>
@@ -99,7 +100,6 @@
             <program>
               <mainClass>${package}.ve.App</mainClass>
               <name>DemoVE</name>
-            </program>
             </program>
           </programs>
         </configuration>

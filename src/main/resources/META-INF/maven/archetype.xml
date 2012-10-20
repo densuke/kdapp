@@ -1,12 +1,11 @@
 <archetype>
   <id>kdapp</id>
   <sources>
+    <source encoding="UTF-8">src/main/java/derby/App.java</source>
+    <source encoding="UTF-8">src/main/java/mysql/App.java</source>
     <source encoding="UTF-8">src/main/java/App.java</source>
-    <source encoding="UTF-8">src/main/java/kd/derby/App.java</source>
-    <source encoding="UTF-8">src/main/java/kd/mysql/App.java</source>
-    <source encoding="UTF-8">src/main/java/kd/App.java</source>
-    <source encoding="UTF-8">src/main/java/kd/ve/DemoFrame.java</source>
-    <source encoding="UTF-8">src/main/java/kd/ve/App.java</source>
+    <source encoding="UTF-8">src/main/java/ve/DemoFrame.java</source>
+    <source encoding="UTF-8">src/main/java/ve/App.java</source>
   </sources>
   <testSources>
     <source encoding="UTF-8">src/test/java/AppTest.java</source>
