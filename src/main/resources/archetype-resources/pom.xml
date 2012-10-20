@@ -8,6 +8,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <!-- 依存関係処理 -->
   <dependencies>
     <dependency>
       <groupId>org.apache.derby</groupId>
@@ -61,7 +63,7 @@
               <addClasspath>true</addClasspath>
             </manifest>
             <manifestEntries>
-              <Class-Path>../config/</Class-Path>
+              <Class-Path>../config/</Class-Path> <!-- プロパティファイルのパスを含めておく -->
             </manifestEntries>
           </archive>
         </configuration>
@@ -88,8 +90,16 @@
           <extraJvmArguments>-Xmx512m</extraJvmArguments> <!-- 実行時JavaVMへの引数、不要なら行ごと削除OK -->
           <programs>
             <program>
-              <mainClass>${package}.App</mainClass> <!-- main()を含むクラスを指定 -->
-              <name>App<!-- 実行する際の名前に書き換え --></name>
+              <mainClass>${package}.derby.App</mainClass>  <!-- main()を含むクラスを指定 -->
+              <name>DemoDerby</name>                       <!-- 実行する際の名前に書き換え -->
+            <program>
+              <mainClass>${package}.mysql.App</mainClass>
+              <name>DemoMySQL</name>
+            </program>
+            <program>
+              <mainClass>${package}.ve.App</mainClass>
+              <name>DemoVE</name>
+            </program>
             </program>
           </programs>
         </configuration>

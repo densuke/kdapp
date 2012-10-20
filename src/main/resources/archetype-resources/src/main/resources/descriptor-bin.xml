@@ -18,6 +18,13 @@
                 <include>*.properties</include>
             </includes>
         </fileSet>
+        <fileSet>
+            <directory>src/main/resources/docs</directory>
+            <outputDirectory>.</outputDirectory>
+            <includes>
+                <include>*.txt</include>
+            </includes>
+        </fileSet>
     </fileSets>
     <dependencySets>
         <dependencySet>
