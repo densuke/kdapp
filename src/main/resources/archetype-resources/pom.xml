@@ -90,17 +90,19 @@
           <extraJvmArguments>-Xmx512m</extraJvmArguments> <!-- 実行時JavaVMへの引数、不要なら行ごと削除OK -->
           <programs>
             <program>
-              <mainClass>${package}.derby.App</mainClass>  <!-- main()を含むクラスを指定 -->
-              <name>DemoDerby</name>                       <!-- 実行する際の名前に書き換え -->
+              <mainClass>${package}.mysql.App</mainClass>  <!-- main()を含むクラスを指定 -->
+              <name>DemoMySQL</name>                       <!-- 実行する際の名前に書き換え -->
             </program>
+            <!-- Apache Derbyのサンプルを有効にするときはこのコメント部分を解除してください
             <program>
-              <mainClass>${package}.mysql.App</mainClass>
-              <name>DemoMySQL</name>
-            </program>
+              <mainClass>${package}.derby.App</mainClass> 
+              <name>DemoDerby</name>
+            </program> -->
+            <!-- VisualEditorのサンプルを有効にするときはこのコメント部分を解除してください
             <program>
               <mainClass>${package}.ve.App</mainClass>
               <name>DemoVE</name>
-            </program>
+            </program> -->
           </programs>
         </configuration>
         <executions>
